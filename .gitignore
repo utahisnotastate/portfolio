@@ -1,0 +1,37 @@
+# PhpStorm specific #
+.idea/
+*.iml
+out/
+
+
+# WordPress specific #
+wordpress/wp-content/uploads/
+wordpress/wp-content/wp-config.php
+wordpress/wp-content/debug.log
+wordpress/wp-content/upgrade/*
+wordpress/wp-content/backups/
+wordpress/wp-content/blogs.dir/
+wordpress/wp-content/cache/
+wordpress/wp-content/upgrade/
+
+# Python environment specific #
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment #
+venv/
+.env
+.env.local
+.python-version
+
+# OS specific #
+.DS_Store
+Thumbs.db
+
+# Node modules if you're using any Node.js in your project #
+node_modules/
+
+# Logs #
+*.log
+*.sql

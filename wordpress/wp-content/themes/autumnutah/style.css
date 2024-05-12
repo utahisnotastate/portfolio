@@ -1,0 +1,191 @@
+/*
+Theme Name: Autumn Utah
+Theme URI: http://www.utahcreates.com
+Author: Utah Hans
+Author URI: http://www.utahcreates.com
+Description: A custom Autumn inspired theme based on my design.
+Version: 1.0
+Text Domain: mycustomtheme
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #160d00;
+     width: 100%;
+    height: 100%;
+}
+
+/* Main Navigation Bar Styling */
+.main-navigation {
+    background-color: #f4f4f4; /* Light background color for the navbar */
+    padding: 10px 20px; /* Padding around the navigation bar */
+    text-align: center; /* Centering the navigation links */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
+}
+
+.main-navigation ul {
+    list-style: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Using flexbox to align links in a row */
+    justify-content: center; /* Center links horizontally */
+    align-items: center; /* Center links vertically */
+}
+
+.main-navigation li {
+    display: inline-block; /* Display list items inline */
+    margin: 0 15px; /* Horizontal spacing between links */
+}
+
+.main-navigation a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Dark grey color for the text */
+    font-size: 16px; /* Set font size for the links */
+    font-family: Arial, sans-serif; /* Font family for the links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.main-navigation a:hover {
+    color: #0088cc; /* Color change on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-logo, .nav-links a {
+        font-size: 1rem;
+    }
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.project-card {
+    width: 300px; /* Fallba4ck color */
+    border: 3px solid #b5651d; /* Match the border color from your mockup */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-card a {
+    background-color: #FFF2DB;
+
+    text-decoration: none; /* No underlines on the link */
+}
+
+.project-card img {
+    width: 100%;
+    display: block; /* Removes bottom gap/spacing */
+}
+
+.project-card h2 {
+    text-align: center;
+    margin: 0; /* Remove default margins */
+    padding: 10px 0; /* Padding for visual spacing */
+     /* Dark grey text */
+     /* Separator line */
+}
+
+.project-card p {
+    color: #dedede; /* Slightly darker grey for the description */
+    margin: 0; /* Remove default margins */
+    padding: 10px; /* Padding for text */
+    font-size: 1.1rem; /* Slightly smaller font size */
+}
+.project-title {
+    background-color: #FFF2DB;
+    color: #0E3B66;
+
+}
+
+.project-description {
+    color: #FFF2DB;
+
+}
+
+.resume-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  /* Full viewport height */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0; /* Adding padding to top and bottom for better framing */
+
+}
+
+.resume-content {
+    width: 80%; /* Fixed width for better control */
+    color: #0E3B66;
+    background: #FFF2DB; /* Increased opacity for better readability */
+    padding: 40px; /* Increased padding for better text isolation */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: auto; /* Centering in the viewport */
+    position: relative; /* Ensuring it is on top of the background */
+    overflow: hidden; /* Keeping all content within bounds */
+    font-size: 16px; /* Ensuring text size is readable */
+    line-height: 1.6; /* Improving line height for readability */
+}
+
+/* Text and Typography Styles */
+h1, h2, h3, h4 {
+    color: #2A2A2A; /* Dark color for headings for better visibility */
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+p, li {
+    line-height: 1.6; /* Improved line spacing */
+    font-size: 16px; /* Optimal font size for reading */
+}
+
+ul, ol {
+    margin-left: 20px; /* Ensuring lists are indented properly */
+    padding-left: 10px;
+}
+
+@media (max-width: 600px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .resume-content {
+        width: 90%; /* Full width on smaller screens */
+        padding: 20px; /* Reduced padding on smaller screens */
+    }
+}
+
+/* Additional responsive settings for better mobile viewing */
+@media (max-width: 480px) {
+    .resume-content {
+        padding: 10px;
+    }
+
+    h1, h2, h3 {
+        font-size: 18px; /* Smaller font sizes for headers on mobile */
+    }
+
+    p, li {
+        font-size: 14px; /* Smaller font size for body text on mobile */
+    }
+}

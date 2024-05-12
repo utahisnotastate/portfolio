@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  wordpress:
+    image: wordpress:latest
+    ports:
+      - "8000:80"
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: ${WP_WORD}
+      WORDPRESS_DB_PASSWORD: ${WP_WORD}
+      WORDPRESS_DB_NAME: ${WP_WORD}
+    volumes:
+      - ./wordpress:/var/www/html  # Maps the entire WordPress installation to your host
+    restart: always
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: somewordpress
+      MYSQL_DATABASE: ${WP_WORD}
+      MYSQL_USER: ${WP_WORD}
+      MYSQL_PASSWORD: ${WP_WORD}
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+
+volumes:
+  db_data:
